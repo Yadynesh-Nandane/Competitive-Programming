@@ -21,9 +21,11 @@ strng = strng.split(" ")
 column = 0
 row = (len(strng)+2)
 
-for i in strng:                                        # Calculating Number of columns.
+for i in strng:                                       # Calculating Number of columns.
     if(column < len(i)):
-        column = (len(i)+2)
+        column = (len(i))
+
+column = column+2
 
 for i in range(row):                                   # Loop for rows.
     if(i==0):
